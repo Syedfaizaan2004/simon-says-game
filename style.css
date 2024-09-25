@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgba(66, 195, 178, 0.53), rgba(129, 159, 249, 0.5));
+}
+
+.highscore {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* Button Styling */
+.btn {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Colors */
+.yellow {
+    background-color: #f99b45;
+}
+
+.red {
+    background-color: #d95980;
+}
+
+.purple {
+    background-color: #819ff9;
+}
+
+.green {
+    background-color: #63aac0;
+}
+
+/* Flash Effects */
+.flash {
+    background-color: white !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.userflash {
+    background-color: green !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Button Container */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.line-1, .line-2 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Start Button Styling */
+.start-btn {
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.start-btn:hover {
+    background-color: #45a049;
+    font-size: 1.8rem;
+}
+
+/* Info Container */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.level-display, .score-display {
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .btn {
+        height: 130px;
+        width: 130px;
+    }
+    
+    .start-btn {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        height: 110px;
+        width: 110px;
+    }
+
+    .highscore {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    .start-btn {
+        padding: 10px 25px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        height: 90px;
+        width: 90px;
+    }
+
+    .highscore {
+        font-size: 1rem;
+    }
+
+    .start-btn {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .level-display, .score-display {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+}
